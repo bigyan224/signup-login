@@ -14,6 +14,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(cors({
     origin: 'https://signup-login-frontend.vercel.app', // Specify the allowed origin
+    methods:["POST" ,  "GET"],
     credentials: true, // Allow sending cookies and other credentials
 }));
 
