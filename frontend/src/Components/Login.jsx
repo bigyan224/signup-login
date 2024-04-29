@@ -1,9 +1,13 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar'
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Login = () => {
+    const navigate = useNavigate();
+
     const [val, setval] = useState({email:"",password:""});
     const [buttonColorClass, setButtonColorClass] = useState('bg-blue-500');
 
@@ -22,7 +26,7 @@ const Login = () => {
             // alert("Login success");
             
         setButtonColorClass('bg-green-500');
-        window.location="/profile"
+        navigate("/profile");
 
         }
         else if(res.status===401){
