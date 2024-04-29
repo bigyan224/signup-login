@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(cors({
-    origin: '*', // Specify the allowed origin
+    origin: 'https://signup-login-frontend.vercel.app', // Specify the allowed origin
     credentials: true, // Allow sending cookies and other credentials
 }));
 
