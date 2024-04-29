@@ -10,7 +10,7 @@ const Login = () => {
     const handlesubmit=(e)=>{
         e.preventDefault();
 
-        let r= fetch("http://localhost:3000/login",{
+        let r= fetch("https://signup-login-tau.vercel.app/login",{
         method:"POST",
         headers:{
             "Content-type":"application/json"

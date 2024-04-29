@@ -10,7 +10,7 @@ function Profile() {
     const fetchData = async () => {
         try {
             // Send a GET request to the server
-            const response = await fetch('http://localhost:3000/profile', {
+            const response = await fetch('https://signup-login-tau.vercel.app/profile', {
                 method: 'GET',
                 credentials: "include",
                 headers: {

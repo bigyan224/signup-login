@@ -7,7 +7,7 @@ const Signup = () => {
     const [buttonColorClass, setButtonColorClass] = useState('bg-blue-500');
    const handlesubmit=(event)=>{
     event.preventDefault();
-    let r= fetch("http://localhost:3000/signup",{
+    let r= fetch("https://signup-login-tau.vercel.app/signup",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

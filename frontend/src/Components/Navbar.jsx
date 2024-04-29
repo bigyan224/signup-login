@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const logout=()=>{
-    fetch ("http://localhost:3000/logout",{
+    fetch ("https://signup-login-tau.vercel.app/logout",{
       method:"POST",
       credentials:"include",
       headers:{
