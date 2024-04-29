@@ -45,7 +45,8 @@ app.post("/login",async(req,res)=>{
     bcrypt.compare(password, hash).then(function(result) {
         if(result){
             let token = jwt.sign({email:user.email}, 'shhhhh');
-            res.cookie("token", token, { httpOnly: true, secure: true, sameSite: 'lax' });
+            res.cookie("token", token, { httpOnly: true, secure: true, sameSite: 'lax',domain: 'https://signup-login-frontend.vercel.app', // Set the domain
+        path: '/' });
 
             res.status(200);
             res.send("login success")
