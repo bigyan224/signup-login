@@ -10,7 +10,7 @@ const Login = () => {
     const handlesubmit=(e)=>{
         e.preventDefault();
 
-        let r= fetch("https://signup-login-tau.vercel.app/login",{
+        let r= fetch("https://signup-login-1.onrender.com/login",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
